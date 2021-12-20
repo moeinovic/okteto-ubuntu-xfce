@@ -2,3 +2,5 @@ services:
   okteto-first:
     build: .
     shm_size: 2.6gb
+    ports:
+      - "8585:8585"
