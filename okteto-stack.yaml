@@ -1,0 +1,4 @@
+build:
+  context: .
+  dockerfile: Dockerfile
+  target: prod
