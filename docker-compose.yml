@@ -2,12 +2,9 @@ services:
     ubuntu:
         public: true
         container_name: 13131
-        image: accetto/ubuntu-vnc-xfce:latest
+        image: lukaszlach/kali-desktop:xfce
         ports:
-            - 6901:6901
-        volumes: 
-            - /root/Desktop
-            - /home
+            - 6080:6080
         resources:
           cpu: 2000m
           memory: 6Gi
