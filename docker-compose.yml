@@ -2,7 +2,7 @@ services:
     ubuntu:
         public: true
         container_name: 13131
-        image: lukaszlach/kali-desktop:xfce
+        image: qeeqbox/parrot
         ports:
             - 6080:6080
         resources:
