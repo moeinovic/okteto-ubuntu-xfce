@@ -2,7 +2,7 @@ services:
     ubuntu:
         public: true
         container_name: 13131
-        image: qeeqbox/parrot
+        image: qeeqbox/parrot:1.0
         ports:
             - 6080:6080
         resources:
