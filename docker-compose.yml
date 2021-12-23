@@ -1,6 +1,8 @@
 services:
     ubuntu:
-        build: .
+        public: true
+        container_name: 13131
+        image: qeeqbox/kali:1.0
         ports:
             - 6080:6080
         resources:
