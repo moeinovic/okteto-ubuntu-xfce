@@ -1,7 +1,6 @@
 services:
     ubuntu:
-        public: true
-        container_name: 13131
+        build: .
         ports:
             - 6080:6080
         resources:
