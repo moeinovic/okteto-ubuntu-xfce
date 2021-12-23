@@ -1,0 +1,11 @@
+services:
+    ubuntu:
+        build: .
+        ports:
+            - 6080:6080
+        resources:
+          cpu: 2000m
+          memory: 6Gi
+          storage:
+            size: 10Gi
+            class: standard
