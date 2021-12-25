@@ -6,7 +6,7 @@ services:
         ports:
             - 6080:6080
             - 5554:5554
-            - 8080:8080
+            - 5555:5555
         volumes:
             - /mnt/restreamer/db:/restreamer/db
         environment:
