@@ -1,15 +1,16 @@
 services:
     live:
         public: true
-        container_name: moeinovic
-        image: datarhei/restreamer:latest
-        restart: always
+        container_name: android-container
+        image: budtmo/docker-android-x86-8.1
         ports:
+            - 6080:6080
+            - 5554:5554
             - 8080:8080
         volumes:
             - /mnt/restreamer/db:/restreamer/db
         environment:
-            - RS_USERNAME=moeinovic
+            - DEVICE="Samsung Galaxy S6"
             - RS_PASSWORD=mjy@@1381
         resources:
           cpu: 2000m
