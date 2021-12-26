@@ -1,10 +1,16 @@
 services:
     live:
         public: true
-        container_name: android-container
-        image: qeeqbox/android-tools:1.0
+        container_name: restream
+        image: datarhei/restreamer:latest
         ports:
-            - 6080:6080
+            - 8080:8080
+        volumes:
+        restart: always
+            - /mnt/restreamer/db:/restreamer/db
+        environment:
+            - RS_USERNAME=moeinovic
+            - RS_PASSWORD=mjy@@1381
         resources:
           cpu: 2000m
           memory: 6Gi
