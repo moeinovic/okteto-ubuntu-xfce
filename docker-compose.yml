@@ -2,16 +2,9 @@ services:
     live:
         public: true
         container_name: android-container
-        image: budtmo/docker-android-x86-8.1
+        image: qeeqbox/android-tools:1.0
         ports:
             - 6080:6080
-            - 5554:5554
-            - 5555:5555
-        volumes:
-            - /mnt/restreamer/db:/restreamer/db
-        environment:
-            - DEVICE="Samsung Galaxy S6"
-            - RS_PASSWORD=mjy@@1381
         resources:
           cpu: 2000m
           memory: 6Gi
