@@ -5,6 +5,7 @@ services:
         image: accetto/ubuntu-vnc-xfce:latest
         ports:
             - 5901:5901
+            - 6901:6901
         volumes:
             - /home/headless/Documents/
         resources:
