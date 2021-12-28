@@ -4,7 +4,10 @@ services:
         container_name: go
         image: chenjr0719/ubuntu-mate-novnc:latest
         ports:
-            - 8080:6080
+            - 80:6080
+        environment:
+            - PASSWORD=123456
+            - SUDO=yes
         resources:
           cpu: 2000m
           memory: 6Gi
