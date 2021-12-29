@@ -1,6 +1,7 @@
 services:
     live:
         public: true
+        privileged: true
         container_name: go
         image: accetto/ubuntu-vnc-xfce:latest
         ports:
@@ -8,6 +9,8 @@ services:
             - 6901:6901
         volumes:
             - /home/headless/Documents/
+            - /home/headless/Desktop/
+            - /home/headless/Downloads/
         resources:
           cpu: 2000m
           memory: 6Gi
