@@ -1,11 +1,9 @@
 services:
-    live:
+    xfce:
         public: true
         privileged: true
         container_name: go
         image: accetto/ubuntu-vnc-xfce:latest
-        devices:
-            - "/dev/kvm:/dev/kvm"
         ports:
             - 5901:5901
             - 6901:6901
